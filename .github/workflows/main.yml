@@ -3,8 +3,9 @@ name: eren2
 
 # Controls when the action will run.
 on:
-  schedule:
-    - cron: "1 * * * *"
+  push:
+    branches:
+        - main
 
 jobs:
   health_check_job:
