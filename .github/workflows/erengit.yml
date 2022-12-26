@@ -1,0 +1,18 @@
+name: erengit
+
+# Controls when the action will run.
+on:
+  issues:
+    types:
+      - opened
+
+
+jobs:
+  health_check_job:
+    runs-on: ubuntu-latest
+    name: Check all sites
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Shell Script
+        id: shell_script_run
+        run: bash ./health-check.sh
