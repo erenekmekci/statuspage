@@ -108,7 +108,7 @@ function templatizeString(text, parameters) {
 
 function getStatusText(color) {
   return color == "nodata"
-    ? "No Data Available"
+    ? "Mevcut Veri Yok"
     : color == "success"
     ? "Fully Operational"
     : color == "failure"
